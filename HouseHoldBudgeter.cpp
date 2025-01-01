@@ -14,14 +14,18 @@ int main() {
     double gas_Total;
     double garbage_Total;
 
-    cout << "Enter Nickname Of All Members:" << endl;
+    cout << "Enter Nickname Of All Members" << endl;
+    cout<<"---------------------------------"<<endl;
 
     for(int i = 0; i < 6; i++) {
         cout << "Enter Name: ";
         cin >> name[i];
+        cout<<endl;
     }
-
+cout<<endl;
     // Now we have the names, let's find out the costing
+    cout<<"Enter Common Rent "<<endl;
+    cout<<"-------------------"<<endl;
     cout << "Enter Bua Monthly Total Rent: ";
     cin >> Bua_Total;
 
@@ -33,13 +37,16 @@ int main() {
 
     cout << "Enter Garbage Monthly Total Rent: ";
     cin >> garbage_Total;
-
+    cout<<endl;
+   cout<<"Now Type Cost of Individual"<<endl;
+   cout<<"--------------------------------"<<endl;
     for(int i = 0; i < 6; i++) {
         cout << "Enter " << name[i] << "'s Monthly House Rent: ";
         cin >> houseRent[i];
 
         cout << "Enter " << name[i] << "'s Electricity Bill: ";
         cin >> electricity[i];
+        cout<<endl;
     }
 
     // Calculate the shared costs
